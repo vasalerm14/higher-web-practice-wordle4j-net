@@ -9,6 +9,9 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
+
+//Добрый день, не разобрался куда делать pull request, как раньше сделал dev в main, а у вас ничего нет, пришлось ZIP
+//отправить, извините
 public class Wordle {
     public static void main(String[] args) {
         try (

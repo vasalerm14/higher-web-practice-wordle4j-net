@@ -27,11 +27,10 @@ class WordleHintTest {
         WordleDictionary dictionary = new WordleDictionary(
                 List.of("герой", "гонец")
         );
-
-        WordleGame game = new WordleGame(dictionary);
+        WordleGame game = new WordleGame(dictionary, "герой");
         game.makeMove("гонец");
-
         String hint = game.getHint();
         assertEquals("герой", hint);
     }
+
 }

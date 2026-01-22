@@ -28,6 +28,12 @@ public class WordleGame {
         this(dictionary, new PrintWriter(System.out));
     }
 
+    public WordleGame(WordleDictionary dictionary, String answer) {
+        this.dictionary = dictionary;
+        this.log = new PrintWriter(System.out);
+        this.answer = answer;
+    }
+
     public String makeMove(String input) throws GameException {
         String word = WordleDictionary.normalize(input);
 
